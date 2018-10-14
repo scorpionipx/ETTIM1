@@ -25,7 +25,7 @@ unsigned short pwm = 0;
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(SENSOR_PIN, INPUT_PULLUP);
+  pinMode(SENSOR_PIN, INPUT);
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(PWM_PIN, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(SENSOR_PIN), blink, CHANGE);

@@ -1,0 +1,74 @@
+#include p16f84.inc	
+yL equ 0x20
+yH equ 0x21
+x0 equ 0x22 
+x1 equ 0x23
+x2 equ 0x24
+Ra equ 0x25
+Rb equ 0x26
+i equ 0x27
+   org 0x00
+   goto main
+   org 0x10
+main:
+MOVLW D'100'
+	MOVWF x0
+	MOVLW D'50'
+	MOVWF x1
+	MOVLW D'25'
+	MOVWF x2
+	CLRF yL
+	CLRF yH
+	
+	MOVF x0,0
+	MOVWF Ra;Ra=X0
+	MOVLW D'6'
+	MOVWF Rb;Rb=6
+	CALL produs
+	
+	MOVF x1,0
+	MOVWF Ra;Ra=x1
+	MOVLW D'6'
+	MOVWF Rb;Rb=6
+	CALL produs
+	
+	MOVF x2,0
+	MOVWF Ra;Ra=x2
+	MOVLW D'4'
+	MOVWF Rb;Rb=4
+	CALL produs
+	
+	BCF STATUS,C
+	RRF yH,1
+	RRF yL,1
+	
+	BCF STATUS,C
+	RRF yH,1
+	RRF yL,1
+	
+	BCF STATUS,C
+	RRF yH,1
+	RRF yL,1
+	
+	BCF STATUS,C
+	RRF yH,1
+	RRF yL,1
+	
+	BCF STATUS,C
+	RRF yH,1
+	RRF yL,1
+	
+	NOP
+
+produs:
+	MOVF Rb,0
+	MOVWF i;i=Rb
+Loop:
+	MOVF Ra,0
+	ADDWF yL,1
+	BTFSC STATUS,C
+	INCF yH,1
+	DECFSZ i,1
+	goto Loop
+	RETURN
+end

@@ -1,0 +1,22 @@
+#include<htc.h>
+unsigned int y;
+void produs(unsigned char Ra,unsigned char Rb);
+void main(void)
+{ 	unsigned char x0,x1,x2; 
+	x0=100;
+	x1=50;
+	x2=25;
+	y=0;
+	produs(x0,6);
+	produs(x1,6);
+	produs(x2,4);
+	y=y>>4;
+asm("NOP");
+}
+
+void produs(unsigned char Ra,unsigned char Rb)
+{
+	unsigned char i;
+	for(i=Rb;i>0;i--)
+		y=y+Ra;
+}
