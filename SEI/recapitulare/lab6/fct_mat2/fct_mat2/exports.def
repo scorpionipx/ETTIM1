@@ -1,0 +1,3 @@
+LIBRARY	"fct_mat2"
+
+EXPORTS fct_mat2

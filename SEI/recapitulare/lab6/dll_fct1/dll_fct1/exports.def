@@ -1,0 +1,4 @@
+LIBRARY	"dll_fct1"
+
+EXPORTS fct_mat1
+
