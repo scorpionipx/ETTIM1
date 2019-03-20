@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1552997872 source:d:\dsusers\uidq6025\home\poo\tema1p1\tema_1_p1\memory_handler.cpp
+	"stdafx.h"
+
+1553006328 d:\dsusers\uidq6025\home\poo\tema1p1\tema_1_p1\stdafx.h
+	<stdio.h>
+	<conio.h>
+	<iostream>
+	<malloc.h>
+	<ctype.h>
+
+1552998078 source:d:\dsusers\uidq6025\home\poo\tema1p1\tema_1_p1\main.cpp
+	"stdafx.h"
+
+1552997723 source:d:\dsusers\uidq6025\home\poo\tema1p1\tema_1_p1\vectror_handler.cpp
+	"stdafx.h"
+
+1552998301 source:d:\dsusers\uidq6025\home\poo\tema1p1\tema_1_p1\matrix_handler.cpp
+	"stdafx.h"
+

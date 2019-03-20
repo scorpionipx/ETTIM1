@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1553006381 source:d:\dsusers\uidq6025\home\poo\tema1p2\tema_1_p2\array_handler.cpp
+	"stdafx.h"
+
+1553006370 d:\dsusers\uidq6025\home\poo\tema1p2\tema_1_p2\stdafx.h
+	<stdio.h>
+	<conio.h>
+	<iostream>
+	<malloc.h>
+	<ctype.h>
+
+1553006042 source:d:\dsusers\uidq6025\home\poo\tema1p2\tema_1_p2\main.cpp
+	"stdafx.h"
+
+1553006141 source:d:\dsusers\uidq6025\home\poo\tema1p2\tema_1_p2\memory_handler.cpp
+	"stdafx.h"
+
